@@ -4,5 +4,9 @@ angular.module("mainModule", [])
 		return String(texto).replace(/<[^>]+>/gm,'');
 	}
 }).controller("FiltersController", function($scope){
-	$scope.mi_html = "<p>Hola</p>";
+	//$scope.mi_html = "<p>Hola</p>";
+	$scope.mi_html = {};
+	$scope.mi_html.title = "Hola";
+	$scope.mi_html.body = "Hola mundo";
+	$scope.costo = 2;
 })
